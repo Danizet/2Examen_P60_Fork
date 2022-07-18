@@ -19,7 +19,7 @@ void Configuracion::on_btnColor_released()
 {
     m_color = QColorDialog::getColor(m_color,
                                     this,
-                                    "Color del pincel");
+                                    "Color de la circunferencia");
 }
 
 void Configuracion::setColor(const QColor &newColor)
