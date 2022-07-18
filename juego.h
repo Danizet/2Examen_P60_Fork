@@ -15,6 +15,7 @@ class Juego : public QMainWindow
     Q_OBJECT
 
 public:
+    void paintEvent(QPaintEvent *event) override;
     Juego(QWidget *parent = nullptr);
     ~Juego();
 

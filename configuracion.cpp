@@ -1,6 +1,8 @@
 #include "configuracion.h"
 #include "ui_configuracion.h"
 
+#define DEFAULT_DIMENSION 3
+
 Configuracion::Configuracion(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Configuracion)
