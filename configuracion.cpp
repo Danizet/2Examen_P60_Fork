@@ -17,7 +17,9 @@ Configuracion::~Configuracion()
 
 void Configuracion::on_btnColor_released()
 {
-
+    m_color = QColorDialog::getColor(m_color,
+                                    this,
+                                    "Color del pincel");
 }
 
 void Configuracion::setColor(const QColor &newColor)

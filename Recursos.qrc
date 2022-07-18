@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Recursos/iconos/mando.png</file>
+        <file>Recursos/iconos/configuraciones.png</file>
+    </qresource>
+</RCC>
