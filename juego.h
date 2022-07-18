@@ -19,12 +19,12 @@ public:
 
     Juego(QWidget *parent = nullptr);
     ~Juego();
-    void dibujar();
 
 protected:
     void paintEvent(QPaintEvent *event) override;
 
 private slots:
+
     void on_btnArriba_released();
 
     void on_btnAbajo_released();

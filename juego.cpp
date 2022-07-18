@@ -18,6 +18,19 @@ Juego::~Juego()
 }
 
 
+
+void Juego::paintEvent(QPaintEvent *event)
+{
+
+    QRectF circulo(200, 200, 100, 100);
+
+    QPainter painter(this);
+    QPen pincel;
+    pincel.setWidth(70);
+    painter.drawEllipse(circulo);
+
+}
+
 void Juego::on_btnArriba_released()
 {
 
@@ -39,14 +52,6 @@ void Juego::on_btnIzqueirda_released()
 void Juego::on_btnDerecha_released()
 {
 
-}
-
-
-void Juego::paintEvent(QPaintEvent *event)
-{
-    QRectF circulo(200, 200, 100, 100);
-    QPainter painter(this);
-    painter.drawEllipse(circulo);
 }
 
 void Juego::on_actionConfigraci0n_triggered()

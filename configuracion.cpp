@@ -1,5 +1,6 @@
 #include "configuracion.h"
 #include "ui_configuracion.h"
+#include <QInputDialog>
 
 #define DEFAULT_DIMENSION 3
 
@@ -53,3 +54,18 @@ int Configuracion::dimension() const
     return m_dimension;
 }
 
+/*
+void Configuracion::on_pushButton_released()
+{
+
+}
+*/
+
+void Configuracion::on_pushButton_released()
+{
+    m_dimension = QInputDialog::getInt(this,
+                                  "Ancho del pincel",
+                                  "Ingrese el ancho del pincel de dibujo",
+                                  m_dimension,
+                                  1, 25);
+}
