@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QDebug>
+#include <QPainter>
 #include "configuracion.h"
 #include "circulo.h"
 
@@ -15,9 +16,13 @@ class Juego : public QMainWindow
     Q_OBJECT
 
 public:
-    void paintEvent(QPaintEvent *event) override;
+
     Juego(QWidget *parent = nullptr);
     ~Juego();
+    void dibujar();
+
+protected:
+    void paintEvent(QPaintEvent *event) override;
 
 private slots:
     void on_btnArriba_released();

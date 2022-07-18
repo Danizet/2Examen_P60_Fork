@@ -1,8 +1,4 @@
 #include "circulo.h"
-#include <QImage>
-#include <QPainter>
-
-
 
 Circulo::Circulo()
     :QPoint(0,0)
